@@ -50,11 +50,14 @@ export default function HomePage() {
 
   return (
     <Pagina titulo={"Projeto IESB"}>
-      <Row md={4}>
+      <Row md={5}>
         {lista.map((item) => (
           <Col className="py-2">
-            <Card style={{ height: "100%" }}>
-              <Card.Img src={item.imagem} style={{ height: "100%" }} />
+            <Card style={{ height: "100%", width: "100%" }}>
+              <Card.Img
+                src={item.imagem}
+                style={{ height: "100%", width: "100%" }}
+              />
               <Card.Body>
                 <Card.Title>{item.nome}</Card.Title>
                 Cadastrados: {item.quantidade}
